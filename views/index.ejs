@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="h-screen w-full">
+        <div class="relative h-full w-full">
+            <div id="myBar" class="ml-13 origin-left transform transition-all ease-in-out duration-500 absolute z-2 w-0 h-screen bg-red-200"></div>
+            <div class="absolute h-1000 w-full bg-zinc-700"></div>
+            <div class="flex relative h-full w-13 bg-white">
+                <div id="myBar" class="absolute z-4 ml-13 origin-left transform transition-all ease-in-out duration-500 absolute z-2 w-0 h-screen bg-red-200"></div>
+                <div onclick="document.getElementById('myBar').classList.toggle('w-55')" class="h-13 absolute z-3 inset-0 w-13 bg-blue-400"></div>
+            </div>     
+        </div>
+    </div>
+</body>
+</html>
